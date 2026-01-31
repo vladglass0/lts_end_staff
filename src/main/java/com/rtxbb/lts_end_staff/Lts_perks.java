@@ -1,4 +1,4 @@
-package com.rtxbb.lts_perks;
+package com.rtxbb.lts_end_staff;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -14,7 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 @Mod(Lts_perks.MODID)
 public class Lts_perks {
-    public static final String MODID = "lts_perks";
+    public static final String MODID = "lts_end_staff";
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
     public static final RegistryObject<Item> ENDER_STAFF = ITEMS.register("ender_staff", 

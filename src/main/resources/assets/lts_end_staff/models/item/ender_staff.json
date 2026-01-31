@@ -1,0 +1,7 @@
+{
+  "parent": "lts_end_staff:custom/posokh",
+  "textures": {
+    "0": "lts_end_staff:block/enderba",
+    "particle": "lts_end_staff:item/enderba"
+  }
+}

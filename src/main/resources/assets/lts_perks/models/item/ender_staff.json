@@ -1,7 +1,0 @@
-{
-  "parent": "lts_perks:custom/posokh",
-  "textures": {
-    "0": "lts_perks:block/enderba",
-    "particle": "lts_perks:item/enderba"
-  }
-}

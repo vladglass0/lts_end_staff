@@ -1,4 +1,4 @@
-package com.rtxbb.lts_perks;
+package com.rtxbb.lts_end_staff;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 
