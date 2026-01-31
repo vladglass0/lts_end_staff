@@ -20,9 +20,10 @@ public class EnderStaffItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
 
+        double distance = Config.TELEPORT_DISTANCE.get();
         BlockHitResult ray = level.clip(new ClipContext(
                 player.getEyePosition(1.0F),
-                player.getEyePosition(1.0F).add(player.getViewVector(1.0F).scale(50.0D)),
+                player.getEyePosition(1.0F).add(player.getViewVector(1.0F).scale(distance)),
                 ClipContext.Block.OUTLINE,
                 ClipContext.Fluid.NONE,
                 player
@@ -33,7 +34,7 @@ public class EnderStaffItem extends Item {
             if (!level.isClientSide) {
                 player.teleportTo(teleportVec.x, teleportVec.y, teleportVec.z);
                 player.fallDistance = 0;
-                player.getCooldowns().addCooldown(this, 40);
+                player.getCooldowns().addCooldown(this, Config.TELEPORT_COOLDOWN.get());
             }
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
         }
