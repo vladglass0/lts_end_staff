@@ -32,4 +32,4 @@ The Ender Staff can be found in the **Tools & Utilities** creative tab.
 
 Сторонние материалы могут распространяться на иных условиях, указанных их правообладателями.
 
-**Авторы:** LTS Team, RtxBB.
+**Авторы:** RtxBB/vladglass0.
